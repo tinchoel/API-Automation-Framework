@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: tests.cleanup.PetDeleteTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.266 s -- in tests.cleanup.PetDeleteTest

@@ -1,0 +1,12 @@
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\clients\PetClient.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\config\BaseApiConfig.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\config\ConfigReader.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\models\Pet.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\tests\cleanup\PetDeleteTest.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\tests\lifecycle\JUnitLifecycleTest.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\tests\negative\PetNegativeTest.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\tests\positive\PetCsvDataTest.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\tests\positive\PetGetTest.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\tests\positive\PetPostTest.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\tests\positive\PetPutTest.java
+C:\Users\u608751\ALKEMY\api-automation-framework\src\test\java\utils\PetCsvReader.java

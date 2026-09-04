@@ -1,0 +1,12 @@
+tests\negative\PetNegativeTest.class
+models\Pet.class
+config\BaseApiConfig.class
+tests\cleanup\PetDeleteTest.class
+utils\PetCsvReader.class
+tests\positive\PetPutTest.class
+tests\positive\PetPostTest.class
+tests\positive\PetCsvDataTest.class
+config\ConfigReader.class
+tests\positive\PetGetTest.class
+clients\PetClient.class
+tests\lifecycle\JUnitLifecycleTest.class
