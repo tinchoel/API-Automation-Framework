@@ -1,0 +1,1 @@
+{"uuid":"1e6a3c32-256c-45c4-85b3-9b3f05aab7c1","name":"Scenario: Actualizar una mascota","children":["147ca2b6-e5cf-4815-b740-ee2fae354aa9"],"befores":[{"name":"hooks.Hooks.configurarApi()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1788748615045,"stop":1788748615045}],"afters":[],"start":1788748615045,"stop":1788748617622}

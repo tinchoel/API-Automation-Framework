@@ -1,0 +1,1 @@
+{"uuid":"1777ed0c-8ea2-4ebe-b491-dbeb7f4646e4","name":"Scenario: Consultar una mascota","children":["516e5294-4af3-409d-862c-2e3793db9636"],"befores":[{"name":"hooks.Hooks.configurarApi()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1788748613278,"stop":1788748613279}],"afters":[],"start":1788748613278,"stop":1788748615026}

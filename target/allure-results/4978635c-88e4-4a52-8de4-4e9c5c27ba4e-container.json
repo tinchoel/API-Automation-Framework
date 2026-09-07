@@ -1,0 +1,1 @@
+{"uuid":"4978635c-88e4-4a52-8de4-4e9c5c27ba4e","name":"Scenario: Eliminar una mascota","children":["74e66203-ff62-4448-8484-f5202e282b16"],"befores":[{"name":"hooks.Hooks.configurarApi()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1788748617632,"stop":1788748617632}],"afters":[],"start":1788748617632,"stop":1788748620267}
