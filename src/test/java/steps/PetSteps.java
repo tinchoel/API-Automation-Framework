@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.java.After;
 
 import io.restassured.response.Response;
 import models.Pet;
@@ -14,6 +15,7 @@ import models.Pet;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PetSteps {
 
@@ -24,6 +26,13 @@ public class PetSteps {
     private Response response;
     private long petId;
     private String nombreOriginal;
+
+    @After
+    public void limpiarDatos() {
+    if (petId != 0) {
+        petClient.eliminarMascotaPorId(petId);
+    }
+}
 
     // ---------- pet.feature: Registrar una mascota ----------
 
@@ -77,6 +86,25 @@ public class PetSteps {
         Pet mascotaObtenida = response.as(Pet.class);
         assertEquals(200, response.getStatusCode());
         assertEquals(petId, mascotaObtenida.getId());
+    }
+
+    @When("consulto una mascota {string}")
+    public void consultoUnaMascota(String situacion) {
+    long idAConsultar = "inexistente".equals(situacion)
+            ? faker.number().numberBetween(900000000, 999999999)
+            : petId;
+    response = petClient.obtenerMascotaPorId(idAConsultar);
+    }
+
+    @When("busco mascotas con estado {string}")
+    public void buscoMascotasConEstado(String estado) {
+    response = petClient.obtenerMascotasPorEstado(estado);
+    }
+
+    @And("obtengo al menos una mascota en la lista")
+    public void obtengoAlMenosUnaMascotaEnLaLista() {
+    Pet[] mascotas = response.as(Pet[].class);
+    assertTrue(mascotas.length > 0);
     }
 
     // ---------- Actualizar ----------

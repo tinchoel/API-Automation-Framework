@@ -90,6 +90,15 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Allure + REST Assured: adjunta automáticamente request y response
+        (headers, body, curl) como evidencia en cada paso del reporte. -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-rest-assured</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- Jackson -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>

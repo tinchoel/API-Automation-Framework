@@ -1,5 +1,6 @@
 package config;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 //importamos io.restassured.RestAssured, RequestLoggingFilter y ResponseLoggingFilter para configurar la base URI, base path y puerto de la API, así como para habilitar el registro de solicitudes y respuestas en las pruebas.
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
@@ -19,7 +20,8 @@ public class BaseApiConfig {
         RestAssured.port = ConfigReader.getInt("base.port");
 
         RestAssured.filters(
-                new RequestLoggingFilter(),
-                new ResponseLoggingFilter());
+            new RequestLoggingFilter(),
+            new ResponseLoggingFilter(),
+            new AllureRestAssured());
     }
 }
