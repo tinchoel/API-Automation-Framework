@@ -15,9 +15,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //donde se espera que la API responda con un error controlado (404) por
 // operar sobre un recurso inexistente.
 public class PetNegativeTest extends BaseApiConfig {
-
+    // Instancia de PetClient para realizar operaciones CRUD sobre el recurso Pet
     private final PetClient petClient = new PetClient();
-
+    // Prueba que valida que al buscar una mascota inexistente, la API responde con un código de estado 404. Se genera un ID aleatorio para la mascota y se realiza la solicitud de obtención mediante el método obtenerMascotaPorId del PetClient.
     @DisplayName("Debe retornar 404 al buscar una mascota inexistente")
     @Test
     public void deberiaRetornar404AlBuscarMascotaInexistente() {
@@ -31,7 +31,7 @@ public class PetNegativeTest extends BaseApiConfig {
         // Assert
         assertEquals(404, response.getStatusCode());
     }
-
+    // Prueba que valida que al intentar eliminar una mascota inexistente, la API responde con un código de estado 404. Se genera un ID aleatorio para la mascota y se realiza la solicitud de eliminación mediante el método eliminarMascotaPorId del PetClient.
     @DisplayName("Debe retornar 404 al intentar eliminar una mascota inexistente")
     @Test
     public void deberiaRetornar404AlEliminarMascotaInexistente() {

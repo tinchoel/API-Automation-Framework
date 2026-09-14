@@ -13,10 +13,10 @@ public class Pet {
     private long id;
     private String name;
     private String status;
-
+// Constructor vacío requerido por Jackson para deserializar JSON en objetos Java. Jackson necesita un constructor sin argumentos para crear instancias de la clase y luego establecer los valores de los campos a partir del JSON.
     public Pet() {
     }
-
+// Constructor con parámetros para facilitar la creación de objetos Pet en pruebas. Permite inicializar los atributos id, name y status al crear una instancia de Pet.  
     public Pet(long id, String name, String status) {
         this.id = id;
         this.name = name;

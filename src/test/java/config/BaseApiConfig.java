@@ -18,7 +18,7 @@ public class BaseApiConfig {
         RestAssured.baseURI = ConfigReader.get("base.uri");
         RestAssured.basePath = ConfigReader.get("base.path");
         RestAssured.port = ConfigReader.getInt("base.port");
-
+    // Agrega filtros de RestAssured para registrar solicitudes y respuestas, y adjuntar automáticamente request y response (headers, body, curl) como evidencia en cada paso del reporte de Allure.
         RestAssured.filters(
             new RequestLoggingFilter(),
             new ResponseLoggingFilter(),

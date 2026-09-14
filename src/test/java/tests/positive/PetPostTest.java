@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PetPostTest extends BaseApiConfig {
 
     private final PetClient petClient = new PetClient();
-
+    // Prueba que valida la creación de una mascota utilizando datos dinámicos generados con Faker. Se crea una mascota con un ID aleatorio, un nombre de animal aleatorio y un estado "available". Luego se realiza la solicitud de creación mediante el método crearMascota del PetClient y se realizan aserciones para verificar que el código de estado sea 200 y que los atributos de la mascota creada coincidan con los valores esperados.
     @DisplayName("Debe crear correctamente una mascota utilizando PetClient y el modelo Pet")
     @Test
     public void deberiaCrearMascotaConDatosDinamicos() {

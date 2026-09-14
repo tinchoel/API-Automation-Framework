@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class PetGetTest extends BaseApiConfig {
 
     private final PetClient petClient = new PetClient();
-
+    // Prueba que valida la obtención de una mascota existente por su ID. Se crea una mascota de prueba, se obtiene su información mediante el método obtenerMascotaPorId del PetClient y se realizan aserciones para verificar que el código de estado sea 200 y que el ID de la mascota obtenida coincida con el ID esperado.
     @DisplayName("Debe obtener correctamente una mascota existente por su ID")
     @Test
     public void deberiaObtenerMascotaExistentePorId() {
@@ -41,7 +41,7 @@ public class PetGetTest extends BaseApiConfig {
                 () -> assertEquals(200, response.getStatusCode()),
                 () -> assertEquals(pet.getId(), mascotaObtenida.getId()));
     }
-
+    // Prueba que valida la obtención de mascotas filtradas por estado "available". Se realiza la solicitud de obtención mediante el método obtenerMascotasPorEstado del PetClient y se realizan aserciones para verificar que el código de estado sea 200, que se obtenga al menos una mascota y que todas las mascotas obtenidas tengan el estado "available".
     @DisplayName("Debe obtener mascotas filtradas por estado disponible")
     @Test
     public void deberiaObtenerMascotasPorEstadoDisponible() {

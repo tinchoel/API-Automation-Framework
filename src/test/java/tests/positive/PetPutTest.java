@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PetPutTest extends BaseApiConfig {
 
     private final PetClient petClient = new PetClient();
-
+    // Prueba que valida la actualización de los datos de una mascota existente. Se crea una mascota de prueba, se actualizan sus atributos (nombre y estado) y se realiza la solicitud de actualización mediante el método actualizarMascota del PetClient. Luego se obtiene la información actualizada de la mascota y se realizan aserciones para verificar que el código de estado sea 200 y que los atributos actualizados coincidan con los valores esperados.
     @DisplayName("Debe actualizar correctamente los datos de una mascota existente")
     @Test
     public void deberiaActualizarMascotaExistente() {

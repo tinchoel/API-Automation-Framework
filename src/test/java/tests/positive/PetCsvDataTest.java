@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PetCsvDataTest extends BaseApiConfig {
 
     private final PetClient petClient = new PetClient();
-
+    // Prueba que consume datos de prueba externos (pets.csv) en lugar de
     @DisplayName("Debe crear y validar cada mascota definida en pets.csv")
     @Test
     public void deberiaCrearMascotasDesdeArchivoCsv() {
